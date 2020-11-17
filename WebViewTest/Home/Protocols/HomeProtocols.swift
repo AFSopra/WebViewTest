@@ -12,6 +12,8 @@ protocol HomeViewProtocol {}
 
 protocol HomeInteractorProtocol {}
 
-protocol HomePresenterProtocol {}
+protocol HomePresenterProtocol {
+    func viewDidLoad()
+}
 
 protocol HomeRouterProtocol {}

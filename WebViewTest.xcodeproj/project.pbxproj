@@ -18,6 +18,9 @@
 		679A27262562CFD700F15008 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679A271D2562CFD700F15008 /* HomeProtocols.swift */; };
 		679A27272562CFD700F15008 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679A271F2562CFD700F15008 /* HomeInteractor.swift */; };
 		679A27282562CFD700F15008 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679A27212562CFD700F15008 /* HomeRouter.swift */; };
+		679A27312562D08A00F15008 /* MathisPaturleInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 679A27302562D08A00F15008 /* MathisPaturleInfo.plist */; };
+		679A27352562D7CA00F15008 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 679A27342562D7CA00F15008 /* index.html */; };
+		67ABD9DC2563E3B40098AC02 /* WebViewTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ABD9DB2563E3B40098AC02 /* WebViewTestUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		679A271D2562CFD700F15008 /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		679A271F2562CFD700F15008 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		679A27212562CFD700F15008 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		679A27302562D08A00F15008 /* MathisPaturleInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MathisPaturleInfo.plist; sourceTree = "<group>"; };
+		679A27342562D7CA00F15008 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		67ABD9DB2563E3B40098AC02 /* WebViewTestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTestUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,11 @@
 		679A27142562CFD700F15008 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				679A27192562CFD700F15008 /* View */,
+				679A271E2562CFD700F15008 /* Interactor */,
+				679A271C2562CFD700F15008 /* Protocols */,
 				679A27152562CFD700F15008 /* Presenter */,
 				679A27172562CFD700F15008 /* Model */,
-				679A27192562CFD700F15008 /* View */,
-				679A271C2562CFD700F15008 /* Protocols */,
-				679A271E2562CFD700F15008 /* Interactor */,
 				679A27202562CFD700F15008 /* Router */,
 			);
 			path = Home;
@@ -139,8 +145,11 @@
 		679A272B2562CFE700F15008 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				679A27342562D7CA00F15008 /* index.html */,
 				679A26F92562CFBB00F15008 /* Assets.xcassets */,
 				679A26FB2562CFBB00F15008 /* LaunchScreen.storyboard */,
+				679A27302562D08A00F15008 /* MathisPaturleInfo.plist */,
+				67ABD9DB2563E3B40098AC02 /* WebViewTestUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -211,6 +220,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679A27352562D7CA00F15008 /* index.html in Resources */,
+				679A27312562D08A00F15008 /* MathisPaturleInfo.plist in Resources */,
 				679A26FD2562CFBB00F15008 /* LaunchScreen.storyboard in Resources */,
 				679A27252562CFD700F15008 /* HomeView.xib in Resources */,
 				679A26FA2562CFBB00F15008 /* Assets.xcassets in Resources */,
@@ -225,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				679A26F12562CFBA00F15008 /* AppDelegate.swift in Sources */,
+				67ABD9DC2563E3B40098AC02 /* WebViewTestUtils.swift in Sources */,
 				679A26F32562CFBA00F15008 /* SceneDelegate.swift in Sources */,
 				679A27272562CFD700F15008 /* HomeInteractor.swift in Sources */,
 				679A27242562CFD700F15008 /* HomeView.swift in Sources */,

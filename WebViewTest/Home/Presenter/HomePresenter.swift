@@ -20,4 +20,6 @@ final class HomePresenter {
     }
 }
 
-extension HomePresenter: HomePresenterProtocol {}
+extension HomePresenter: HomePresenterProtocol {
+    func viewDidLoad() {}
+}

@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
 
-        let viewController = HomeRouter.assembleModule(withinNavController: false)
+        let viewController = HomeRouter.assembleModule(withinNavController: true)
 
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
