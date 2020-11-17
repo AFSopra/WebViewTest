@@ -19,8 +19,8 @@
 		679A27272562CFD700F15008 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679A271F2562CFD700F15008 /* HomeInteractor.swift */; };
 		679A27282562CFD700F15008 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679A27212562CFD700F15008 /* HomeRouter.swift */; };
 		679A27312562D08A00F15008 /* MathisPaturleInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 679A27302562D08A00F15008 /* MathisPaturleInfo.plist */; };
-		679A27352562D7CA00F15008 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 679A27342562D7CA00F15008 /* index.html */; };
 		67ABD9DC2563E3B40098AC02 /* WebViewTestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ABD9DB2563E3B40098AC02 /* WebViewTestUtils.swift */; };
+		67D2308B2563EC2900CB8666 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 67D2308A2563EC2900CB8666 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		679A271F2562CFD700F15008 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		679A27212562CFD700F15008 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		679A27302562D08A00F15008 /* MathisPaturleInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MathisPaturleInfo.plist; sourceTree = "<group>"; };
-		679A27342562D7CA00F15008 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		67ABD9DB2563E3B40098AC02 /* WebViewTestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTestUtils.swift; sourceTree = "<group>"; };
+		67D2308A2563EC2900CB8666 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 		679A272B2562CFE700F15008 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				679A27342562D7CA00F15008 /* index.html */,
+				67D2308A2563EC2900CB8666 /* index.html */,
 				679A26F92562CFBB00F15008 /* Assets.xcassets */,
 				679A26FB2562CFBB00F15008 /* LaunchScreen.storyboard */,
 				679A27302562D08A00F15008 /* MathisPaturleInfo.plist */,
@@ -220,7 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				679A27352562D7CA00F15008 /* index.html in Resources */,
+				67D2308B2563EC2900CB8666 /* index.html in Resources */,
 				679A27312562D08A00F15008 /* MathisPaturleInfo.plist in Resources */,
 				679A26FD2562CFBB00F15008 /* LaunchScreen.storyboard in Resources */,
 				679A27252562CFD700F15008 /* HomeView.xib in Resources */,

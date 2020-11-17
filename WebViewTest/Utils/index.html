@@ -1,31 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      <title>ExploreWKWebViewJavascript</title>
-      <script type="text/javascript">
-          function submitForm() {
-              var message = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value
-              };
-              window.webkit.messageHandlers.observer.postMessage(message);
-          }
-      </script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>ExploreWKWebViewJavascript</title>
+  <script type="text/javascript">
+    function submitForm() {
+      var message = {
+        name: document.getElementById("nameTF").value,
+        years: document.getElementById("yearsTF").value
+      };
+      window.webkit.messageHandlers.observer.postMessage(message);
+    }
+
+    function reset() {
+      document.getElementById("nameTF").value = "";
+      document.getElementById("yearsTF").value = "";
+    }
+
+    function changeBackgroundColor(colorText) {
+      document.body.style.background = colorText;
+    }
+
+    function rename() {
+      var name = document.getElementById("nameTF").value
+      var year = document.getElementById("yearsTF").value
+      document.getElementById("labelAux").innerHTML = "Introduce otros valores " + name + ", " + year;
+      this.reset()
+    }
+
+    function getQueryParams(qs) {
+      qs = qs.split('+').join(' ');
+      var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+      while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+      }
+      return params;
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <h2>Introduce tus datos de contacto:</h2>
+    <h3 id="id"></h3>
+    <h3 id="labelAux"></h3>
     <div>
-      <h2>Enter your data:</h2>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="Enter email" name="email">
-        </div>
-        <div>
-          <label for="name  ">Name:</label>
-          <input type="value" id="name" placeholder="Enter name" name="name">
-        </div>
-        <button onclick="submitForm()">Click me</button>
+      <label for="name" id="nameLabel">Nombre:</label>
+      <input type="value" id="nameTF" placeholder="Introduce nombre" name="name">
     </div>
-  </body>
+    <div>
+      <label for="years" id="yearsLabel">Edad:</label>
+      <input type="number" id="yearsTF" placeholder="Introduce edad" name="years">
+    </div>
+    <button onclick="submitForm()">Actualizar datos de contacto</button>
+  </div>
+  <script type="text/javascript">
+    readInit();
+
+    function readInit() {
+      var query = getQueryParams(document.location.search);
+      if (query.id == null) {
+        alert("OJO, no hay token de identificación!");
+        //TODO: enviar a la app un mensaje para desconectar el webView
+        //...
+        document.getElementById("id").innerHTML = "OJO, no hay token de identificación!";
+      } else {
+        document.getElementById("id").innerHTML = "Your id: " + query.id;
+      }
+    }
+  </script>
+</body>
+
 </html>
